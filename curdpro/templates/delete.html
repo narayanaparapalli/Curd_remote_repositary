@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Production Form</title>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+    h1{
+        text-align: center;
+        color: blue;
+    }
+    body{
+        background-color: gold;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+         <div class="offset-md-3 col-md-6">
+<form method="POST">
+    <h1>Product Delete</h1>
+    {% csrf_token %}
+    {{ dform }}<br>
+    <center>
+    <input type="submit" value="Delete" class="btn bg-success text-white">
+    <input type="reset" value="Clear" class="btn bg-danger text-white">
+    </center>
+    </form><br>
+
+             <center>
+             <a href="/#/" class="btn bg-primary text-white">Goto Home</a>
+             </center>
+        </div>
+    </div>
+</div>
+</body>
+</html>
